@@ -1,4 +1,4 @@
-clc
+cclc
 clear
 format compact
 syms x
@@ -7,6 +7,7 @@ x0=input('Enter x0: ');
 xn=input('Enter xn: ');
 n=input('Enter the no. of Sub-intervals: ');
 h=(xn-x0)/n; %Difference between xn and xn+1
+disp("h= "+h);
 OddSum=0;
 EvenSum=0;
 for i=1:+2:n-1 %Intitial Value 1, Step +2 and EndVal=n-1
